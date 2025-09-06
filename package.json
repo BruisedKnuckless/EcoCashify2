@@ -2,13 +2,14 @@
   "name": "ecofinds",
   "version": "1.0.0",
   "description": "EcoFinds - Sustainable marketplace prototype",
-  "main": "server/index.js",
+  "main": "client/package.json",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
     "build": "cd client && npm run build",
-    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "vercel-build": "cd client && npm run build"
   },
   "keywords": ["marketplace", "sustainable", "react", "nodejs"],
   "author": "EcoFinds Team",
